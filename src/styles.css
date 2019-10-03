@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+body {
+  background-color: #ffffff;
+}
+
+container-base {
+  max-width: 100%;
+}
+
+.container-menu {
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  color: rgb(101, 99, 99);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(101, 99, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-color: rgb(242, 242, 242);
+  color: rgb(101, 99, 99);
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242, 242, 242, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-color: rgb(101, 99, 99);
+  color: rgb(242, 242, 242);
+}
+
+.minha_loja {
+  font-size: 20px;
+  font-family: "Arial";
+  color: rgb(101, 99, 99);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.minha_loja::after {
+  display: none;
+}
+.minha_loja:hover{
+  color: rgb(101, 99, 99);
+  text-decoration: none;
+}
+
+#navbar-menu-content > ul > li > a {
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
+  color: rgb(127, 127, 127);
+  line-height: 1.2;
+}
+#navbar-menu-content > ul > li > a:hover {
+  color: rgb(0, 127, 0);
+  text-decoration: none;
+}
+
+.cart-button {
+  background-image: url('./assets/cart.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  position: relative;
+  min-height: 48px;
+  min-width: 70px;
+  line-height: 2em;
+  border: 2px solid #7f7e7e;
+  border-radius: 25px;
+}
+  .cart-button span {
+    display: none;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(127, 126, 126);
+    text-transform: uppercase;
+    text-align: right;
+    padding-left: 40px;
+  }
+
+  .cart-button:hover{
+    background-position: 10% center;
+  }
+
+  .cart-button:hover span{
+    display: block;
+  }
+
+.ultimos_produtos {
+  width: 100%;
+}
+.ultimos_produtos h1 {
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(101, 99, 99);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding: 1em;
+  margin: 0.8em 0 0 0;
+}
+
+.container-produto{
+  padding: 0%;
+}
+
+.produto {
+  background-image: url('./assets/produto.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(242, 242, 242, 0.5);
+  border: 1px solid rgb(242,242,242)!important;
+  margin: 5%;
+}
+.produto:hover {
+  box-shadow: 0 .75rem 1.25rem rgba(0,0,0,0.30)!important;
+  border: none;
+}
+  .produto .nome_do_produto {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(113, 113, 113);
+    text-transform: uppercase;
+    line-height: 1.875;
+    text-align: center;
+  }
+  .produto .valor_do_produto {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(113, 113, 113);
+    text-transform: uppercase;
+    line-height: 1.667;
+    text-align: center;
+  }
+
+.footer {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 0px 10px 0px #7f7e7e;
+  -mz-box-shadow: 0px 0px 10px 0px #7f7e7e;
+  box-shadow: 0px 0px 10px 0px #7f7e7e;
+}
+  .footer p {
+    color: rgb(113, 113, 113);
+  }
+    .footer p span {
+      font-style: italic;
+    }
+      .footer p span a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+@media screen and (min-width: 981px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .container-base {
+    max-width: 980px;
+  }
+  
+  .container-menu{
+    min-height: 100px;
+  }
+
+  .minha_loja {
+    margin-right: 4em;
+    padding-right: 0%;
+  }
+  .minha_loja::after {
+    background: #dee2e6;
+    width: 1px;
+    content: "";
+    display: inline-flex;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    height: 50%;
+    margin-left: 2em;
+  }
+
+  #navbar-menu-content > ul > li > a {
+    padding: 1em;
+  }
+  #navbar-menu-content > ul > li:nth-child(1) > a {
+    padding-left: 0%;
+  }
+}
